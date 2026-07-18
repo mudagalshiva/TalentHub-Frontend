@@ -69,10 +69,10 @@
 }
 
   console.log("=================================");
-  console.log("API :", `${API_BASE_URL}${path}`);
+  console.log("API :", `${BASE_URL}${path}`);
   console.log("TOKEN :", token);
 
-    const response = await fetch(`${API_BASE_URL}${path}`, {
+    const response = await fetch(`${BASE_URL}${path}`, {
       ...options,
       headers
     });
@@ -93,7 +93,7 @@
   }
 
   const api = {
-    API_BASE_URL,
+    API_BASE_URL: BASE_URL,
     TOKEN_KEY,
     USER_KEY,
     getToken,
