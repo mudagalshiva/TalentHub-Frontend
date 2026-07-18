@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Job | TalentHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/api.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/components.js"></script>
+  <script defer src="js/profile.js"></script>
+</head>
+<body>
+  <div data-component="navbar"></div>
+  <main class="page-main">
+    <section class="page-hero"><div class="container"><h1>Edit job</h1><p class="muted">Keep role details accurate as hiring needs change.</p></div></section>
+    <section class="section">
+      <div class="container">
+        <form class="card card-pad" id="jobForm" novalidate>
+          <div class="form-row">
+            <div class="form-group"><label>Job title</label><input class="input" name="title" required><div class="field-error"></div></div>
+            <div class="form-group"><label>Company name</label><input class="input" name="companyName" required><div class="field-error"></div></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Location</label><input class="input" name="location" required><div class="field-error"></div></div>
+            <div class="form-group"><label>Job type</label><select class="select" name="jobType" required><option>Full time</option><option>Part time</option><option>Contract</option><option>Internship</option></select><div class="field-error"></div></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Salary range</label><input class="input" name="salaryRange"></div>
+            <div class="form-group"><label>Experience</label><input class="input" name="experience"></div>
+          </div>
+          <div class="form-group"><label>Skills</label><input class="input" name="skills"></div>
+          <div class="form-group"><label>Description</label><textarea class="textarea" name="description" required></textarea><div class="field-error"></div></div>
+          <button class="btn btn-primary"><i class="fa-solid fa-floppy-disk"></i>Save changes</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div data-component="footer"></div>
+</body>
+</html>

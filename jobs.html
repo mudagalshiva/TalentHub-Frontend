@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobs | TalentHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/api.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/components.js"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/jobs.js"></script>
+</head>
+<body>
+  <div data-component="navbar"></div>
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="container row-between">
+        <div><h1>Find your next role</h1><p class="muted">Search, filter, save, and apply to roles that match your next move.</p></div>
+        <span class="tag tag-primary" id="jobCount">Loading jobs</span>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container layout">
+        <aside class="card sidebar">
+          <form id="jobFilters">
+            <div class="filter-group"><label>Search</label><input class="input" name="q" placeholder="Title, skill, company"></div>
+            <div class="filter-group"><label>Location</label><input class="input" name="location" placeholder="Remote, city"></div>
+            <div class="filter-group"><label>Salary</label><input class="input" name="salary" placeholder="Expected salary"></div>
+            <div class="filter-group"><label>Experience</label><select class="select" name="experience"><option value="">Any</option><option>Fresher</option><option>1-3 years</option><option>3-5 years</option><option>5+ years</option></select></div>
+            <div class="filter-group"><label>Job type</label><select class="select" name="jobType"><option value="">Any</option><option>Full time</option><option>Part time</option><option>Contract</option><option>Internship</option></select></div>
+            <div class="filter-group"><label>Company</label><input class="input" name="company" placeholder="Company name"></div>
+            <button class="btn btn-primary btn-block"><i class="fa-solid fa-filter"></i>Apply filters</button>
+            <button class="btn btn-ghost btn-block" type="button" id="clearFilters">Clear filters</button>
+          </form>
+        </aside>
+        <div>
+          <div class="grid grid-2" id="jobsList"></div>
+          <div class="pagination" id="pagination"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div data-component="footer"></div>
+</body>
+</html>

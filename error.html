@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Error | TalentHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/api.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/components.js"></script>
+</head>
+<body>
+  <div data-component="navbar"></div>
+  <main class="page-main">
+    <section class="page-hero"><div class="container"><h1>Something went wrong</h1><p class="muted">The frontend is available, but an operation did not complete successfully.</p></div></section>
+    <section class="section">
+      <div class="container">
+        <div class="card card-pad empty-state"><i class="fa-solid fa-triangle-exclamation"></i><h2>Try again in a moment</h2><p>Check that the backend is running at http://localhost:8080/api and that CORS allows this frontend origin.</p><a class="btn btn-primary" href="index.html">Return home</a></div>
+      </div>
+    </section>
+  </main>
+  <div data-component="footer"></div>
+</body>
+</html>

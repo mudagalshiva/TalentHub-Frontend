@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TalentHub | Recruitment Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/api.js"></script>
+  <script defer src="js/auth.js"></script>
+  <script defer src="js/components.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <div data-component="navbar"></div>
+  <main class="page-main">
+    <section class="hero">
+      <div class="container hero-content">
+        <span class="eyebrow"><i class="fa-solid fa-sparkles"></i>Hiring that moves with your team</span>
+        <h1>TalentHub</h1>
+        <p>Discover roles, manage applicants, and keep recruitment operations moving through one polished hiring workspace.</p>
+        <form class="search-panel" id="homeSearchForm">
+          <div class="input-wrap"><i class="fa-solid fa-magnifying-glass"></i><input class="input" name="keyword" placeholder="Job title, company, or skill"></div>
+          <div class="input-wrap"><i class="fa-solid fa-location-dot"></i><input class="input" name="location" placeholder="City, remote, or hybrid"></div>
+          <button class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i>Search jobs</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Featured jobs</h2>
+            <p class="section-copy">Fresh opportunities from active hiring teams.</p>
+          </div>
+          <a class="btn btn-secondary" href="jobs.html">Browse all</a>
+        </div>
+        <div class="grid grid-3" id="featuredJobs"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Featured companies</h2>
+            <p class="section-copy">Explore organizations with open roles.</p>
+          </div>
+        </div>
+        <div class="grid grid-4" id="featuredCompanies"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-4">
+          <article class="card stat-card"><i class="fa-solid fa-user-check"></i><strong>Fast</strong><span class="muted">Candidate applications</span></article>
+          <article class="card stat-card"><i class="fa-solid fa-chart-simple"></i><strong>Clear</strong><span class="muted">Recruiter analytics</span></article>
+          <article class="card stat-card"><i class="fa-solid fa-shield-halved"></i><strong>Secure</strong><span class="muted">Protected account flows</span></article>
+          <article class="card stat-card"><i class="fa-solid fa-mobile-screen"></i><strong>Fluid</strong><span class="muted">Responsive on every screen</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Browse by category</h2>
+        </div>
+        <div class="grid grid-4">
+          <a class="card category-card" href="jobs.html?q=engineering"><i class="fa-solid fa-code"></i><h3>Engineering</h3><p class="muted">Web, platform, data, DevOps</p></a>
+          <a class="card category-card" href="jobs.html?q=product"><i class="fa-solid fa-diagram-project"></i><h3>Product</h3><p class="muted">PM, design, research, strategy</p></a>
+          <a class="card category-card" href="jobs.html?q=sales"><i class="fa-solid fa-handshake"></i><h3>Sales</h3><p class="muted">Growth, partnerships, revenue</p></a>
+          <a class="card category-card" href="jobs.html?q=operations"><i class="fa-solid fa-gears"></i><h3>Operations</h3><p class="muted">People, finance, business ops</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-3">
+          <article class="card testimonial-card"><p>"TalentHub gives candidates a calm, premium job search experience."</p><strong>Candidate workflow</strong></article>
+          <article class="card testimonial-card"><p>"Recruiters can post, review, edit, and track jobs without leaving the product."</p><strong>Recruiting workflow</strong></article>
+          <article class="card testimonial-card"><p>"Admins get the operational view they need for platform health."</p><strong>Admin workflow</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container row-between">
+        <div>
+          <h2 class="section-title">Ready to move hiring forward?</h2>
+          <p class="section-copy">Sign in and TalentHub will open the workspace built for your role.</p>
+        </div>
+        <a class="btn btn-primary" href="login.html"><i class="fa-solid fa-right-to-bracket"></i>Sign in</a>
+      </div>
+    </section>
+  </main>
+  <div data-component="footer"></div>
+</body>
+</html>

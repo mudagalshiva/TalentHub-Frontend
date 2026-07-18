@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Career Assistant | TalentHub</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+    <script defer src="js/api.js"></script>
+    <script defer src="js/auth.js"></script>
+    <script defer src="js/components.js"></script>
+    <script defer src="js/ai-career.js"></script>
+
+</head>
+
+<body>
+
+<div data-component="navbar"></div>
+
+<main class="page-main">
+
+<section class="page-hero">
+
+<div class="container">
+
+<h1>
+🤖 AI Career Assistant
+</h1>
+
+<p class="muted">
+
+Analyze your resume, discover missing skills,
+match jobs, and prepare for interviews using AI.
+
+</p>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="container">
+
+<div class="card card-pad">
+
+<h2>
+
+Upload Resume
+
+</h2>
+
+<br>
+
+<form id="resumeAnalyzeForm">
+
+<input
+class="input"
+type="file"
+name="resume"
+accept=".pdf,.doc,.docx"
+required>
+
+<br><br>
+
+<button
+class="btn btn-primary">
+
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+
+Analyze Resume
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="container">
+
+<div id="analysisResult">
+
+<div class="grid grid-4">
+
+<div class="card stat-card">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<strong>--</strong>
+
+<span>Resume Score</span>
+
+</div>
+
+<div class="card stat-card">
+
+<i class="fa-solid fa-code"></i>
+
+<strong>--</strong>
+
+<span>Skills</span>
+
+</div>
+
+<div class="card stat-card">
+
+<i class="fa-solid fa-triangle-exclamation"></i>
+
+<strong>--</strong>
+
+<span>Missing Skills</span>
+
+</div>
+
+<div class="card stat-card">
+
+<i class="fa-solid fa-briefcase"></i>
+
+<strong>--</strong>
+
+<span>Recommended Jobs</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section section-alt">
+
+<div class="container">
+
+<div class="grid grid-2">
+
+<div class="card card-pad">
+
+<h2>
+
+Skills Found
+
+</h2>
+
+<div id="skillsList">
+
+<p class="muted">
+
+Analyze your resume to view skills.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card card-pad">
+
+<h2>
+
+Missing Skills
+
+</h2>
+
+<div id="missingSkills">
+
+<p class="muted">
+
+No analysis yet.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="container">
+
+<div class="card card-pad">
+
+<h2>
+
+Recommended Jobs
+
+</h2>
+
+<div id="recommendedJobs">
+
+<p class="muted">
+
+No recommendations yet.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section section-alt">
+
+<div class="container">
+
+<div class="card card-pad">
+
+<h2>
+
+AI Interview Questions
+
+</h2>
+
+<div id="questions">
+
+<p class="muted">
+
+Interview questions will appear here.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="container">
+
+<div class="card card-pad">
+
+<h2>
+
+AI Suggestions
+
+</h2>
+
+<div id="suggestions">
+
+<p class="muted">
+
+Suggestions will appear here.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<div data-component="footer"></div>
+
+</body>
+
+</html>
