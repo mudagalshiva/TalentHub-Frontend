@@ -1,5 +1,5 @@
 (function () {
-  const API_BASE_URL = "http://localhost:8080/api";
+  const BASE_URL ="https://talenthub-backend-6ncr.onrender.com/api";
   const TOKEN_KEY = "talenthub_token";
   const USER_KEY = "talenthub_user";
 
