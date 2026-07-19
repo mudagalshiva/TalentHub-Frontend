@@ -79,11 +79,12 @@
             <td>
             ${
             app.resumeUrl
-            ? `<a href="http://localhost:8080${app.resumeUrl}"
-                   target="_blank"
-                   class="btn btn-secondary">
-                   View Resume
-               </a>`
+            ? `<a href="${app.resumeUrl}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-secondary">
+            View Resume
+            </a>`
             : "No Resume"
             }
             </td>
